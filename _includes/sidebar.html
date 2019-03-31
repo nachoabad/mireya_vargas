@@ -1,0 +1,29 @@
+<div class="col-lg-4">
+  <div class="blog_right_sidebar">
+    <aside class="single_sidebar_widget author_widget">
+      <img class="author_img img-fluid" src="/assets/img/blog/mireya.jpg" alt="">
+      <h4>Mireya Vargas</h4>
+      <p>Socióloga. Postgrado en Economía y Estudios Liberales. Investigadora y docente dedicada a temas de Desarrollo Humano Sostenible y del Bienestar en Latinoamérica. Ha dedicado sus últimos años a la investigación sobre el Bienestar personal, la psicología profunda y las complejidades culturales.</p>
+      <div class="social_icon">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+          <a href="#"><i class="fa fa-behance"></i></a>
+      </div>
+      <div class="br"></div>
+    </aside>
+    <aside class="single_sidebar_widget post_category_widget">
+      <h4 class="widget_title">Categorías</h4>
+      <ul class="list cat-list">
+      	{% for item in site.data.navigation %}
+        <li>
+          <a href="#" class="d-flex justify-content-between">
+            <p>{{ item.name | capitalize }}</p>
+            <p>37</p>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </aside>
+  </div>
+</div>

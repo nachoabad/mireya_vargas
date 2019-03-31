@@ -1,0 +1,51 @@
+---
+layout: default
+title: Inicio
+---
+
+<section class="banner_area">
+	<div class="container">
+		<div class="row banner_inner">
+			<div class="col-lg-5"></div>
+			<div class="col-lg-7">
+				<div class="banner_content text-center">
+					<h3>Una mirada a la sociedad</h3>
+					<h3>desde el individuo</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--================Blog Area =================-->
+<section class="blog_area p_120">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="blog_left_sidebar">
+        	{% for post in site.posts %}
+				    <article class="blog_style1">
+            	<div class="blog_img">
+            		<img class="img-fluid" src="/assets/img/blog/{{ post.image }}" alt="">
+            	</div>
+            	<div class="blog_text">
+								<div class="blog_text_inner">
+									<div class="cat">
+										{% for category in post.categories %}
+											<a class="cat_btn" href="{{ category.url }}">{{ category }}</a>
+										{% endfor %}
+										<a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }}</a>
+									</div>
+									<a href="#"><h4>{{ post.title }}</h4></a>
+									<p>{{ post.excerpt }}</p>
+									<a class="blog_btn" href="{{ post.url }}">Leer más</a>
+								</div>
+							</div>
+            </article>
+				  {% endfor %}
+      	</div>
+  		</div>
+      {% include sidebar.html %}              
+    </div>
+  </div>
+</section>
