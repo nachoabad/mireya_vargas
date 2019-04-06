@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  País en Regresión
-categories: [blog, travel]
+categories: [Sociedad]
 date: 01-08-2017
 image: pais-en-regresion.jpg
 excerpt_separator: <!--more-->
