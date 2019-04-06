@@ -1,2 +1,5 @@
 url: nachoabad.github.io
 baseurl: /mireya_vargas
+collections:
+  categories:
+    output: true

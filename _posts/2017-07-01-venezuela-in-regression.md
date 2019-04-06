@@ -1,7 +1,10 @@
 ---
 layout: default
 title:  Venezuela in Regression
-categories: [blog, travel]
+categories: [blog, travel, featured]
+featured: true
+sociedad: true
+latinoamerica: true
 date: 01-07-2017
 image: venezuela-in-regression.jpg
 excerpt_separator: <!--more-->

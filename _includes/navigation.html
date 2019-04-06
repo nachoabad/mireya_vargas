@@ -1,7 +1,24 @@
-<nav>
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
-      {{ item.name }}
-    </a>
-  {% endfor %}
-</nav>
+<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+	<ul class="nav navbar-nav menu_nav">
+		{% for category in site.categories %}
+			<li class="nav-item {% if page.url == category.url %}active{% endif %}">
+				<a class="nav-link" href="{{ category.url }}">
+					{{ category.title }}
+				</a>
+			</li>
+	  {% endfor %}
+		<li class="nav-item submenu dropdown">
+			<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+			<ul class="dropdown-menu">
+				<li class="nav-item"><a class="nav-link" href="single-blog.html">Sinlge Blog</a></li>
+				<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
+			</ul>
+		</li>
+	</ul>
+	<ul class="nav navbar-nav navbar-right header_social ml-auto">
+		<li class="nav-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+		<li class="nav-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+		<li class="nav-item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+		<li class="nav-item"><a href="#"><i class="fa fa-behance"></i></a></li>
+	</ul>
+</div>
