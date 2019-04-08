@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Sociedad
-banner_1: Sociedad
+title: Inversión Social
+banner_1: Inversión Social
 banner_2:
 ---
 

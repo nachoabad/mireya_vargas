@@ -1,5 +1,8 @@
 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 	<ul class="nav navbar-nav menu_nav">
+		<li class="nav-item ">
+			<a class="nav-link" href="/">Inicio</a>
+		</li>
 		{% for category in site.categories %}
 			<li class="nav-item {% if page.url == category.url %}active{% endif %}">
 				<a class="nav-link" href="{{ category.url }}">
@@ -8,17 +11,15 @@
 			</li>
 	  {% endfor %}
 		<li class="nav-item submenu dropdown">
-			<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+			<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Links</a>
 			<ul class="dropdown-menu">
-				<li class="nav-item"><a class="nav-link" href="single-blog.html">Sinlge Blog</a></li>
-				<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
+				<li class="nav-item"><a class="nav-link" href="https://www.ashoka.org/en">Ashoka</a></li>
+				<li class="nav-item"><a class="nav-link" href="http://venezuela.ashoka.org/">Ashoka Venezuela</a></li>
+				<li class="nav-item"><a class="nav-link" href="http://wellbeing-project.org/">The Wellbeing Project</a></li>
 			</ul>
 		</li>
 	</ul>
 	<ul class="nav navbar-nav navbar-right header_social ml-auto">
-		<li class="nav-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-		<li class="nav-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-		<li class="nav-item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
-		<li class="nav-item"><a href="#"><i class="fa fa-behance"></i></a></li>
+		<li class="nav-item"><a href="https://twitter.com/m_vargasl"><i class="fa fa-twitter"></i></a></li>
 	</ul>
 </div>

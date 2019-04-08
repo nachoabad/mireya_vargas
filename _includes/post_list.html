@@ -1,35 +1,29 @@
-<section class="blog_area p_120">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8">
-        <div class="blog_left_sidebar">
-        	{% for post in site.posts %}
-        		{% if post.categories contains page.title %}
-					    <article class="blog_style1">
-	            	<div class="blog_img">
-	            		<img class="img-fluid" src="/assets/img/blog/{{ post.image }}" alt="">
-	            	</div>
-	            	<div class="blog_text">
-									<div class="blog_text_inner">
-										<div class="cat">
-											{% for category in post.categories %}
-												{% unless category == 'Inicio' %}
-													<a class="cat_btn" href="{{ category.url }}">{{ category }}</a>
-												{% endunless %}
-											{% endfor %}
-											<a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }}</a>
-										</div>
-										<a href="#"><h4>{{ post.title }}</h4></a>
-										<p>{{ post.excerpt }}</p>
-										<a class="blog_btn" href="{{ post.url }}">Leer más</a>
-									</div>
-								</div>
-	            </article>
-            {% endif %}
-				  {% endfor %}
-      	</div>
-  		</div>
-      {% include sidebar.html %}
-    </div>
-  </div>
-</section>
+<div class="col-lg-8">
+  <div class="blog_left_sidebar">
+  	{% for post in site.posts %}
+  		{% if post.categories contains page.title %}
+		    <article class="blog_style1">
+        	<div class="blog_img">
+        		<img class="img-fluid" src="/assets/img/blog/{{ post.image }}" alt="">
+        	</div>
+        	<div class="blog_text">
+						<div class="blog_text_inner">
+							<div class="cat">
+								{% for category in post.categories %}
+									{% unless category == 'Inicio' %}
+										<a class="cat_btn" href="{{ category.url }}">{{ category }}</a>
+									{% endunless %}
+								{% endfor %}
+								<a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }}</a>
+							</div>
+							<a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
+							<p>{{ post.excerpt }}</p>
+							<a class="blog_btn" href="{{ post.url }}">Leer más</a>
+						</div>
+					</div>
+        </article>
+      {% endif %}
+	  {% endfor %}
+	</div>
+</div>
+      

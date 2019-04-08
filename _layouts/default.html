@@ -23,8 +23,18 @@
     {% include header.html %}
     
     {% include banner.html %}
-
-    {{ content }}
+    
+    <section class="blog_area p_120">
+      <div class="container">
+        <div class="row">
+          
+          {{ content }}
+      
+          {% include sidebar.html %}
+          
+        </div>
+      </div>
+    </section>
     
     {% include footer.html %}
     <!-- Optional JavaScript -->
