@@ -15,7 +15,7 @@ excerpt: 'Estudio Venezuela con la
   Development, Oxford University,
   UK y el Centro para el Desarrollo
   Humano IERU/Universidad
-Simón Bolívar'
+  Simón Bolívar'
 ---
 
 {% include post_download.html %}
