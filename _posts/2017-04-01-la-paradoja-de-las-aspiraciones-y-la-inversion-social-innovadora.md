@@ -3,7 +3,7 @@ layout: default
 title: La Paradoja de las Aspiraciones y la Inversión Social Innovadora
 banner_1: La Paradoja de las Aspiraciones
 banner_2: y la Inversión Social Innovadora
-categories: [Sociedad, Inicio]
+categories: [Conocimiento, Sociedad, Inicio]
 date: 01-08-2017
 image: paradoja-de-aspiraciones.jpg
 pdf: paradoja-de-aspiraciones.pdf
