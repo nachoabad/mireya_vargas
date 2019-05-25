@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Inversión Social
-banner_1: Inversión Social
+title: Conocimiento
+banner_1: Creación de Conocimiento
 banner_2:
 ---
 
